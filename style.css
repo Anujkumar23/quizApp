@@ -1,0 +1,57 @@
+body{
+    overflow: hidden;
+}
+
+
+.main{
+    background-color: white;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  
+
+}
+.container{
+    width:50vw;
+    height:50vh;
+    background-color: bisque;
+    border:2px solid rgb(34, 135, 194);
+    border-radius: 5px;
+    padding-left:15px;
+    
+
+    
+}
+ul li{
+    list-style: none;
+}
+
+.btn{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn button{
+    background-color:white;
+    padding:10px;
+    border: 2px solid #008CBA;
+    border-radius:10px;
+    width:100px;
+    font-style: oblique;
+    
+    
+    
+}
+#score{
+    font-size: medium;
+    font-family:  'Times New Roman', Times, serif;
+    font-style: italic;
+    font-variant: normal;
+}
+
+
+
