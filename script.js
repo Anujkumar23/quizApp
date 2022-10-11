@@ -1,30 +1,4 @@
-// document.getElementById("btn").addEventListener("click",displayName)
 
-// let displayName=()=>{
-//     document.getElementById("name").innerHTML= player;
-//    }
-
-// let  player = prompt("Enter your name","Guest");
-// // let getUser=()=>{
-// // };
-// // getUser();
-
-// let setUser=()=>{
-//     if(player){
-//         let showform= (`welcome , ${player}`);
-//         console.log(showform);
-//     }
-//     else if(player===null){
-//         confirm("do you really want to exit")
-//     }
-//     else if(player===""){
-//         alert("please enter your name to continue")
-//     }
-
-//     document.getElementById("name").innerHTML= player;
-// }
-
-//  let startQuiz = ()=>{
 let quiz = [
   {
     question: " Q1:what is the fullform of HTML ?",
@@ -69,8 +43,7 @@ let questionCount = 0;
 let score = 0;
 let answerCount=0;
 
-// let answers= document.getElementsByClassName("answer");
-// console.log(answers)
+
 
 let loadQuestion = () => {
   document.getElementById("question").innerHTML = quiz[questionCount].question;
@@ -82,9 +55,9 @@ let loadQuestion = () => {
 loadQuestion();
 
 let answers = document.getElementsByClassName("answer");
-console.log( answers);
+
 answers=Array.from(answers);
-console.log(answers);
+
 
 document.getElementById("submit").addEventListener("click", () => {
   
@@ -92,7 +65,6 @@ document.getElementById("submit").addEventListener("click", () => {
   answers.forEach((elem)=>{
     if(elem.checked){
       let  checkedAnswer=elem.value;
-      console.log(checkedAnswer);
       if(checkedAnswer===correctAnswer[answerCount].ans){
         score++;
       }
@@ -115,6 +87,7 @@ let removeCheckedButton=()=>{
     }
   
   questionCount++;
+
   // We have called the function  here.
   removeCheckedButton();
 
